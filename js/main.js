@@ -41,22 +41,22 @@ function validateForm(){
 	//password
 	//El campo password debe tener al menos 6 caracteres                      
 	//El campo password no puede ser igual a "password" ó "123456" ó "098754"
-     if ( password == null || password.length < 6 ) {
+    // if ( password == null || password.length < 6 ) {
         // alert ("Contraseña No Valida, debe tener como mínimo 6 Caracteres!")
         //var contenedor = document.getElementsByClassName('email-container')[0];
         //var etiqueta = document.createElement('span');
         //var nodoError = document.createTextNode('Contraseña No Valida, debe tener como mínimo 6 Caracteres!');
         //etiqueta.appendChild(nodoError);
         //contenedor.appendChild(etiqueta);
-        return false;
-    } else if ( password == '123456' || password == '098754' || password == 'password' ) {
+        // return false;
+    // } else if ( password == '123456' || password == '098754' || password == 'password' ) {
         // alert ("Su Contraseña No es Segura!");
-        return false;
-    }
+        // return false;
+    // }
 	//campo obligatorio
 	//El valor seleccionado de bicis, debe ser una de las opciones presentadas
-    if (bicis == 0) {
+    // if (bicis == 0) {
         // alert("Seleccione su Tipo de Bici!");
-        return false;
-    }
+        // return false;
+    // }
 }
