@@ -58,7 +58,7 @@ function validateForm(){
             var etiquetaSpan2 = document.getElementById('input-password');
             var padreElemento = etiquetaSpan2.parentNode;
             padreElemento.insertBefore(etiquetaSpan, etiquetaSpan2);
-            var nodoMensaje = document.createTextNode('Su Contraseña No es Segura!');
+            var nodoMensaje = document.createTextNode('Su Contraseña No es Segura! No puede ser igual a "123456", "password" o "098754"!');
             etiquetaSpan.appendChild(nodoMensaje);
             return false;
         }
@@ -66,7 +66,7 @@ function validateForm(){
     //El valor seleccionado de bicis, debe ser una de las opciones presentadas
     var bicis = document.querySelector("select").value;
     if (bicis == 0) {
-        // alert("Seleccione su Tipo de Bici!");
+        // alert("Seleccione su Tipo de Bici!")
         var etiquetaSpan = document.createElement('span');
         var etiquetaSpan2 = document.querySelector('select');
         var padreElemento = etiquetaSpan2.parentNode;
